@@ -1,10 +1,14 @@
+
+
+.a {
+  background-color: lightseagreen;
+  color: white;
+}
+
 .body {
   color: lightgray;
 }
 
-.nav {
-  color: turquoise;
-}
 
 /* .box {
   height: 400px;
