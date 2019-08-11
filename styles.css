@@ -31,6 +31,15 @@ body {
   padding: 50px 30px 50px 30px; 
 }
 
+.box-viz {
+  top:15%;
+  left: 3%;
+  right: 40%;
+  background-color: white;
+  padding: 50px 30px 50px 30px; 
+}
+
+
 h2 {
   /* font-family: auto; */
   color: lightseagreen;
@@ -113,6 +122,14 @@ h3 {
     padding: 50px 30px 50px 30px; 
   }
 
+  .box-viz {
+    top:15%;
+    left: 3%;
+    right: 3%;
+    background-color: white;
+    padding: 50px 30px 50px 30px; 
+  }
+  
   .nav-bg-small{
     background-color: lightseagreen;
   }
