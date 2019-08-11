@@ -66,17 +66,21 @@ h3 {
 .navbar-brand {
   background-color: lightseagreen;
   padding: 10px 10px 10px 10px;
+  z-index: 10;
 }
 
 .navbar-light .navbar-brand {
   color: white;
 }
 
+.nav-bg-small{
+  background-color: white;
+}
+
 .collapse {
   z-index: 10;
   background-color: white;
 }
-
 
 
 .latitude-nav {
@@ -92,7 +96,7 @@ h3 {
 
 
 
-@media (max-width: 900px) {
+@media (max-width: 990px) {
   .box-summary {
     top:15%;
     left: 3%;
@@ -109,6 +113,10 @@ h3 {
     padding: 50px 30px 50px 30px; 
   }
 
+  .nav-bg-small{
+    background-color: lightseagreen;
+  }
+  
 }
 
 @media (max-width: 400px) {
@@ -127,6 +135,11 @@ h3 {
     background-color: white;
     /* padding: 50px 30px 50px 30px;  */
   }
+
+  .nav-bg-small{
+    background-color: lightseagreen;
+  }
+  
 
 }
 
