@@ -1,94 +1,12 @@
+/**********************************************************************************
+/* STYLES.CSS */
+/**********************************************************************************/
 
-body {
-  background-color: lightgray;
-}
 
 
-.box-set {
-  position: relative;
-}
-
-.box {
-  position: fixed;
-  /* border: 2px solid turquoise;
-  padding: 50px 30px 50px 30px;  */
-
-}
-
-.box-summary {
-  top:15%;
-  left: 3%;
-  right: 40%;
-  background-color: white;
-  padding: 50px 30px 50px 30px; 
-}
-
-.box-visualization {
-  top:15%;
-  right: 3%;
-  left: 63%;
-  background-color: white;
-  padding: 50px 30px 50px 30px; 
-}
-
-.box-viz {
-  top:15%;
-  left: 3%;
-  right: 40%;
-  background-color: white;
-  padding: 50px 30px 50px 30px; 
-}
-
-.box-cmp {
-  position: relative;
-  top: 20px;
-  right: 75px;
-  left: 75px;
-  width: 900px;
-  background-color: white;
-  padding: 50px 30px 50px 30px; 
-}
-
-h2 {
-  /* font-family: auto; */
-  color: lightseagreen;
-  font-weight: bold;
-}
-
-h3 {
-  /* font-family: initial; */
-  color: lightseagreen;
-  font-weight: bold;
-}
-
-h4 {
-  /* font-family: initial; */
-  color: lightseagreen;
-  font-size: medium;
-  font-weight: bold;
-  text-align: center;
-}
-
-/* .landingsummary {
-  top: 15%;
-  left: 10%;
-  padding: 50px 30px 50px 30px; 
-  /* margin:  50px 10px 10px 10px; */
-  /* background-color: white;
-  position: fixed;
-  left: 50px;
-}
-
-.landingvisuals {
-  top: 15%;
-  right: 10%;
-  padding: 50px 30px 50px 30px;  */
-  /* margin:  50px 10px 10px 10px; */
-  /* background-color: white;
-  position: fixed;
-  right: 50px;
-} */ 
-
+/*****************************************/
+/* NAV BAR */
+/*****************************************/
 .navbar-brand {
   background-color: lightseagreen;
   padding: 10px 10px 10px 10px;
@@ -115,23 +33,154 @@ h4 {
 }
 
 
+
+/*****************************************/
+/* HEADER FORMATTING */
+/*****************************************/
+h2 {
+  /* font-family: auto; */
+  color: lightseagreen;
+  font-weight: bold;
+}
+
+h3 {
+  /* font-family: initial; */
+  color: lightseagreen;
+  font-weight: bold;
+}
+
+h4 {
+  /* font-family: initial; */
+  color: lightseagreen;
+  font-size: medium;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+/*****************************************
+- FOR THE COMPARISON AND DATA PAGES:
+*****************************************/
+.add-scrollbar {
+  height: 150vh;
+  overflow-y: scroll;
+}
+
+
+
+/*****************************************/
+/* BODY */
+/*****************************************/
+body {
+  background-color: lightgray;
+}
+
+
+/**********************************************************************************
+/**********************************************************************************
+/* BOX CONFIG */
+/**********************************************************************************
+/**********************************************************************************/
+
+/*****************************************
+ BOX SET - FOR ALL PAGES
+*****************************************/
+.box-set {
+  position: relative;
+}
+
+.box {
+  position: fixed;
+}
+
+
+/*****************************************
+FOR LANDING PAGE
+*****************************************/
+.box-summary {
+  top:15%;
+  left: 3%;
+  right: 40%;
+  background-color: white;
+  padding: 50px 30px 50px 30px; 
+}
+
 #floatleft {
   float: left;
 }
 
-/* .add-scrollbar {
-  height: 150vh;
-  overflow-y: scroll;
-} */
+
+/*****************************************
+ BOX - FOR LANDING AND VISUALIZATION PAGES
+ - RIGHT PANEL
+*****************************************/
+.box-visualization {
+  top:15%;
+  right: 3%;
+  left: 63%;
+  background-color: white;
+  padding: 50px 30px 50px 30px; 
+}
 
 
+/*****************************************
+ BOX - FOR ALL VISUALIZATION PAGES
+ - LEFT PANEL
+*****************************************/
+.box-viz {
+  top:15%;
+  left: 3%;
+  right: 40%;
+  background-color: white;
+  padding: 50px 30px 50px 30px; 
+}
+
+/*****************************************
+ BOX - FOR COMPARISON PAGE
+*****************************************/
+.box-cmp {
+  /* position: relative; */
+  top: 10%;
+  right: 5%;
+  left: 5%;
+  width: fit-content;
+  background-color: white;
+  padding: 30px 30px 50px 30px; 
+}
+
+/*****************************************
+ BOX - FOR DATA PAGE
+*****************************************/
+.box-data {
+  /* position: relative; */
+  top: 10%;
+  right: 5%;
+  left: 5%;
+  width: fit-content;
+  background-color: white;
+  padding: 30px 30px 50px 30px; 
+}
+
+
+
+
+
+/**********************************************************************************
+/**********************************************************************************
+MEDIA QUERIES
+/**********************************************************************************
+/**********************************************************************************/
+
+/*****************************************
+ MEDIA QUERY - FOR SCREEN WIDTH 400 - 990PX
+*****************************************/
 @media (max-width: 990px) {
   .box-summary {
     top:15%;
     left: 3%;
     right: 3%;
     background-color: white;
-    padding: 50px 30px 50px 30px; 
   }
   
   .box-visualization {
@@ -139,7 +188,6 @@ h4 {
     right: 3%;
     left: 3%;
     background-color: white;
-    padding: 50px 30px 50px 30px; 
   }
 
   .box-viz {
@@ -147,15 +195,23 @@ h4 {
     left: 3%;
     right: 3%;
     background-color: white;
-    padding: 50px 30px 50px 30px; 
   }
  
   .box-cmp {
-    top:15%;
+    /* position: fixed; */
+    top: 9%;
     left: 3%;
     right: 3%;
     background-color: white;
-    padding: 50px 30px 50px 30px; 
+  }
+
+  .box-data {
+    /* position: relative; */
+    top: 9%;
+    right: 3%;
+    left: 3%;
+    width: fit-content;
+    background-color: white;
   }
 
   .nav-bg-small{
@@ -166,21 +222,53 @@ h4 {
   
 }
 
+
+
+/*****************************************
+ MEDIA QUERY - FOR SCREEN WIDTH < = 400
+*****************************************/
 @media (max-width: 400px) {
   .box-summary {
     top: 13%;
-    left: 3%;
-    right: 3%;
+    left: 1%;
+    right: 1%;
     background-color: white;
-    /* padding: 50px 30px 50px 30px;  */
+    padding: 5px 3px 5px 3px; 
   }
   
   .box-visualization {
-    top:75%;
-    right: 3%;
-    left: 3%;
+    top:80%;
+    right: 1%;
+    left: 1%;
     background-color: white;
-    /* padding: 50px 30px 50px 30px;  */
+    padding: 5px 3px 5px 3px; 
+  }
+
+  .box-viz {
+    top:13%;
+    left: 1%;
+    right: 1%;
+    background-color: white;
+    padding: 5px 3px 5px 3px; 
+  }
+
+  .box-cmp {
+    /* position: fixed; */
+    top: 9%;
+    left: 1%;
+    right: 1%;
+    background-color: white;
+    padding: 5px 3px 5px 3px; 
+  }
+ 
+  .box-data {
+    /* position: relative; */
+    top: 9%;
+    right: 1%;
+    left: 1%;
+    width: fit-content;
+    background-color: white;
+    padding: 5px 3px 5px 3px; 
   }
 
   .nav-bg-small{
@@ -190,44 +278,3 @@ h4 {
 
 }
 
-
-/* 
-
-navbar {
-  background-color: lightseagreen;
-}
-
-p {
-  font-size: 20px;
-}
-
-
-
-
-
-floatright {
-  float: right;
-}
- */
-
-
-
-/* .a {
-  background-color: lightseagreen;
-  color: white;
-}
-
- */
-
-
-/* .box {
-  height: 400px;
-  padding: 20px;
-  color: #fff;
-  background: gray;
-}
-
-.margin-top-80 {
-  margin-top: 80px;
-}
- */
