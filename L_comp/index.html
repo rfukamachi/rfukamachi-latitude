@@ -11,10 +11,10 @@
 
     <!-------------------------------------->
     <!-- Tab Title -->
-    <title>Landing Page</title>
+    <title>Comparisons</title>
 
 
-    <!-- Bring in our bootstrap stylesheet -->
+   <!-- Bring in our bootstrap stylesheet -->
     <!-- .min.css makes it machine readable, not human readable, for faster processing: -->
     <!-------------------------------------->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -25,7 +25,7 @@
 
     <!-- Personalized stylesheet (Human readable)-->
     <!-------------------------------------->
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="../styles.css">
 
 </head>
 
@@ -55,21 +55,21 @@
                     Plots
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="../rfukamachi-latitude/L_temp/index.html">Max Temperature</a>
-                    <a class="dropdown-item" href="../rfukamachi-latitude/L_humidity/index.html">Humidity</a>
-                    <a class="dropdown-item" href="../rfukamachi-latitude/L_cloudiness/index.html">Cloudiness</a>
-                    <a class="dropdown-item" href="../rfukamachi-latitude/L_wind/index.html">Wind Speed</a>
+                    <a class="dropdown-item" href="L_temp/index.html">Max Temperature</a>
+                    <a class="dropdown-item" href="L_humidity/index.html">Humidity</a>
+                    <a class="dropdown-item" href="L_cloudiness/index.html">Cloudiness</a>
+                    <a class="dropdown-item" href="L_wind/index.html">Wind Speed</a>
                     </div>
                 </li>
                 
                 <!-- navigation link to Data -->
                 <li class="nav-item">
-                    <a class="nav-link" href="../rfukamachi-latitude/L_data/index.html">Data</a>
+                    <a class="nav-link" href="L_data/index.html">Data</a>
                 </li>
                 
                 <!-- navigation link to Comparison -->
                 <li class="nav-item">
-                    <a class="nav-link" href="../rfukamachi-latitude/L_comp/index.html">Comparison</a>
+                    <a class="nav-link" href="L_comp/index.html">Comparison</a>
                 </li>
                 
             </ul>
@@ -77,31 +77,76 @@
         </div>
     </nav>
 
+
+
     <!-------------------------------------->
-    <!-- CREATE BOX SET FOR THE LANDING PAGE -->
+    <!-- CREATE BOOTSTRAP GRID FOR THE COMPARISON PAGE -->
     <!-------------------------------------->
+
+    <!-- <h2>Comparison: Latitude vs X</h2>
+    <hr>
+    <p>Click any plot to get an in-depth analysis.</p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-6">
+                <h4></h4>
+            </div>
+        </div>
+    </div> -->
+
+
+
 
     <div class="box-set">
-        <figure class="box box-summary">
-            <h2>Summary: Latitude vs X</h2>
+        <figure class="box box-cmp">
+            <h2>Comparison: Latitude vs X</h2>
             <hr>
-            <img src="L_temp/Fig1.png" id="floatleft" alt="MaxTemp" height="200" width="225">
-                <p id="floatright">
-                        The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities. 
-                </p>
-                <p id="floatright">
-                        After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed. 
-                </p>
+            <p>Click any plot to get an in-depth analysis.</p>
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-6">
+                        </br>
+                        <h4>vs. Max Temperature</h4>
+                        <a href="../L_temp/index.html"> 
+                            <img class="mx-auto d-block" src="../images/Latitude_vs_MaxTemp.png" alt="MaxTemp" height="300" width="400">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <h4>vs. Humidity</h4>
+                        <a href="../L_humidity/index.html"> 
+                            <img class="mx-auto d-block" src="../images/Latitude_vs_Humidity.png" alt="MaxTemp" height="300" width="400">
+                        </a>
+                    </div>
+
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <h4>vs. Cloudiness</h4>
+                        <a href="../L_cloudiness/index.html"> 
+                            <img class="mx-auto d-block" src="../images/Latitude_vs_Cloudiness.png" alt="MaxTemp" height="300" width="400">
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-6">
+                        <h4>vs. Wind Speed</h4>
+                        <a href="../L_wind/index.html"> 
+                            <img class="mx-auto d-block" src="../images/Latitude_vs_WindSpeed.png" alt="MaxTemp" height="300" width="400">
+                        </a>
+
+                </div>
+            </div>
+
+
         </figure>
 
-        <figure class="box box-visualization">
-            <h3>Visualizations</h2>
-                <hr>
-                <img src="L_temp/Fig1.png" alt="MaxTemp" height="175" width="175">
-                <img src="L_humidity/Fig2.png" alt="MaxTemp" height="175" width="175">
-                <img src="L_cloudiness/Fig3.png" alt="MaxTemp" height="175" width="175">
-                <img src="L_wind/Fig4.png" alt="MaxTemp" height="175" width="175"> 
-        </figure>
+        <!-- <figure class="box box-cmp">
+            <h2>Comparison: Latitude vs X</h2>
+            <hr>
+
+                <img src="images/Latitude_vs_MaxTemp.png" alt="MaxTemp" height="150" width="150">
+                <img src="images/Latitude_vs_Humidity.png" alt="MaxTemp" height="150" width="150">
+                <img src="images/Latitude_vs_Cloudiness.png" alt="MaxTemp" height="150" width="150">
+                <img src="images/Latitude_vs_WindSpeed.png" alt="MaxTemp" height="150" width="150"> 
+        </figure> -->
     </div>
 
 
