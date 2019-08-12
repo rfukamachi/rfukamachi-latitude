@@ -40,9 +40,11 @@ body {
 }
 
 .box-cmp {
-  top:15%;
-  left: 3%;
-  right: 3%;
+  position: relative;
+  top: 20px;
+  right: 75px;
+  left: 75px;
+  width: 900px;
   background-color: white;
   padding: 50px 30px 50px 30px; 
 }
@@ -117,7 +119,10 @@ h4 {
   float: left;
 }
 
-
+/* .add-scrollbar {
+  height: 150vh;
+  overflow-y: scroll;
+} */
 
 
 @media (max-width: 990px) {
